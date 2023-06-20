@@ -1,0 +1,102 @@
+[
+    {
+        "firstname": "Arely",
+        "middlename": "Nico",
+        "lastname": "Lesch",
+        "email": "Jonatan.Tillman@hotmail.com",
+        "contactNumber": "382.302.1576 x6691",
+        "date": "2022-17-11",
+        "expectedOutput": "error: wrong phone format",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Elisabeth",
+        "middlename": "Cameron",
+        "lastname": "Haley",
+        "email": "Stefan.Abshire@yahoo.com",
+        "contactNumber": "1-551-359-7248",
+        "date": "2022-17-11",
+        "expectedOutput": "save successfully",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Owen",
+        "middlename": "Cameron",
+        "lastname": "Batz",
+        "email": "Bill.Mertz@yahoo.com",
+        "contactNumber": "(964) 259-4410",
+        "date": "2022-17-11",
+        "expectedOutput": "save successfully",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Franz",
+        "middlename": "Rowan",
+        "lastname": "Franey",
+        "email": "Dereck69@gmail.com",
+        "contactNumber": "1-649-305-7259 442",
+        "date": "2022-17-11",
+        "expectedOutput": "save successfully",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Marley",
+        "middlename": "Phoenix",
+        "lastname": "Gottlieb",
+        "email": "Elwin.Bode62@yahoo.com",
+        "contactNumber": "(802) 600-6423 5168",
+        "date": "2022-17-11",
+        "expectedOutput": "save successfully",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Erik",
+        "middlename": "Sasha",
+        "lastname": "Rippin",
+        "email": "Koby_Davis@gmail.com",
+        "contactNumber": "437.922.8964",
+        "date": "2022-17-11",
+        "expectedOutput": "error: wrong phone format",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Eryn",
+        "middlename": "River",
+        "lastname": "Botsford",
+        "email": "Ashlynn_Becker@gmail.com",
+        "contactNumber": "1-621-473-4391 x287",
+        "date": "2022-17-11",
+        "expectedOutput": "error: wrong phone format",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Kacey",
+        "middlename": "Addison",
+        "lastname": "Reinger",
+        "email": "Maxime48@gmail.com",
+        "contactNumber": "465.993.5327 648",
+        "date": "2022-17-11",
+        "expectedOutput": "error: wrong phone format",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Laura",
+        "middlename": "Jaden",
+        "lastname": "Sanford",
+        "email": "Garry.Aufderhar89gmail.com",
+        "contactNumber": "801-419-2640 x61308",
+        "date": "2022-17-11",
+        "expectedOutput": "error: wrong email and phone format",
+        "actualOutput": ""
+    },
+    {
+        "firstname": "Zackery",
+        "middlename": "Charlie",
+        "lastname": "Rolfson",
+        "email": "Claudie.Bruen41@gmail",
+        "contactNumber": "(304) 804-3464 51353",
+        "date": "2022-17-11",
+        "expectedOutput": "error: wrong email format",
+        "actualOutput": ""
+    }
+]

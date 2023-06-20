@@ -1,0 +1,82 @@
+[
+    {
+      "title": "Customer Tactics Member",
+      "description": "Markets",
+      "noteText": "Cum eaque magnam occaecati consequatur est.",
+      "file": "",
+      "expectedOutput": "error: required field is empty",
+      "actualOutput": ""
+    },
+    {
+      "title": "Customer Tactics Administrator",
+      "description": "Mobility",
+      "noteText": "",
+      "file": "",
+      "expectedOutput": "save successfully",
+      "actualOutput": ""
+    },
+    {
+      "title": "Forward Web Liaison",
+      "description": "Identity",
+      "noteText": "Vel omnis quod minima repellat est.",
+      "file": "",
+      "expectedOutput": "save successfully",
+      "actualOutput": ""
+    },
+    {
+      "title": "Internal Brand Officer",
+      "description": "Security",
+      "noteText": "Cupiditate eum sunt deserunt odio quas.",
+      "file": "",
+      "expectedOutput": "save successfully",
+      "actualOutput": ""
+    },
+    {
+      "title": "Regional Creative Agent",
+      "description": "Applications",
+      "noteText": "Molestiae maxime possimus dignissimos cupiditate ea.",
+      "file": "",
+      "expectedOutput": "save successfully",
+      "actualOutput": ""
+    },
+    {
+      "title": "Regional Accounts Specialist",
+      "description": "Factors",
+      "noteText": "Voluptatem optio voluptas quibusdam odit tempore.",
+      "file": "",
+      "expectedOutput": "save successfully",
+      "actualOutput": ""
+    },
+    {
+      "title": "Customer Tactics CEO",
+      "description": "Creative",
+      "noteText": "Quae omnis qui sit doloribus beatae.",
+      "file": "",
+      "expectedOutput": "error: required field is empty",
+      "actualOutput": ""
+    },
+    {
+      "title": "Product Factors Architect",
+      "description": "Directives",
+      "noteText": "Minus facilis fuga corporis vitae eos.",
+      "file": "",
+      "expectedOutput": "save successfully",
+      "actualOutput": ""
+    },
+    {
+      "title": "",
+      "description": "Mobility",
+      "noteText": "Fugit voluptatibus molestias unde ut quia.",
+      "file": "",
+      "expectedOutput": "error: required field is empty",
+      "actualOutput": ""
+    },
+    {
+      "title": "",
+      "description": "Research",
+      "noteText": "Velit magni exercitationem aut deleniti et.",
+      "file": "",
+      "expectedOutput": "error: required field is empty",
+      "actualOutput": ""
+    }
+]

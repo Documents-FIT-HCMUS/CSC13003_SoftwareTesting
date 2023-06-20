@@ -1,0 +1,95 @@
+// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);
+
+
+// Try-catch block to handle exceptions
+try {
+
+// Create a "SoapUIResults" folder in the project path 
+      // Retrieve the project root folder
+      def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+
+      // Specify a folder inside project root to store the results
+      String folderPath = projectPath + "/SoapUIResults";
+
+      // Create a File object for the specified path
+      def resultFolder = new File(folderPath);
+
+      // Check for existence of folder and create a folder
+      if(!resultFolder.exists())
+      {
+        resultFolder.mkdirs();
+      }
+
+      // Retrieve the latest execution date-time
+      Date d = new Date();
+      def executionDate = d.format("dd-MMM-yyyy HH_mm");
+
+
+// Create another subfolder "CSV Reports" to store the reports file 
+      // Specify the subfolder path with name CSV Reports
+      String subfolderPath2 = folderPath+ "/CSV Reports";
+
+      // Create this sub-folder
+      new File(subfolderPath2).mkdirs();
+
+
+
+// Create a Report.csv file inside the CSV Reports folder 
+      // Create a File object for Report csv file (with timestamp)
+      def reportFile = new File(subfolderPath2, "Report_"+executionDate+".csv");
+
+      // Check for existence of report file and create a file
+      if(!reportFile.exists())
+      {
+        reportFile.createNewFile();
+        // Create required column names in the report file
+        reportFile.write('"Test Suite","Test Case",'
+                        +'"Result message","Execution Date"');
+      }
+
+
+
+// Inserting data in the file
+      // Iterate over all the test steps results
+  for(stepResult in testRunner.getResults())
+  {
+    // Retrieve Test Suite name
+   def testSuite = testRunner.testCase.testSuite.name;
+   // Retrieve Test Case name
+   def testCase = testRunner.testCase.name;
+   // Retrieve Test Step
+   def testStep = stepResult.getTestStep();
+   // Retrieve Test Step type
+   def type = testStep.config.type
+   
+   // Retrieve the test result messages
+   if (type == 'groovy') {
+   	continue;
+   }
+   if (type =='properties') {
+   	continue;
+   }
+   if((type=="request").or(type=="restrequest")) {
+        // Creating new line in report file
+   	reportFile.append('\n');
+
+   	// Write all the necessary information in the file
+   	reportFile.append('"' + testSuite + '",');
+   	reportFile.append('"' + testCase + '",');
+        reportFile.append('"');
+   	reportFile.append(stepResult.getStatus().toString());
+   	reportFile.append('",');
+   }
+   reportFile.append('",');
+
+   //Write executionDate in the file
+   reportFile.append('"' + executionDate + '",');
+   reportFile.append('"\n"')	
+  }
+}
+catch(exc)
+{
+   log.error("Exception happened: " + exc.toString());
+}

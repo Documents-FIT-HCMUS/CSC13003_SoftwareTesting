@@ -1,0 +1,20 @@
+CREATE DATABASE `orangehrm_mysql`
+DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE USER 'orangehrm'@'localhost';
+CREATE USER 'orangehrm'@'127.0.0.1';
+CREATE USER 'orangehrm'@'::1';
+
+SET PASSWORD
+FOR 'orangehrm'@'localhost' = PASSWORD('orangehrm123$%');
+SET PASSWORD
+FOR 'orangehrm'@'127.0.0.1' = PASSWORD('orangehrm123$%');
+SET PASSWORD
+FOR 'orangehrm'@'::1' = PASSWORD('orangehrm123$%');
+
+GRANT ALL PRIVILEGES ON
+`orangehrm_mysql`.* TO 'orangehrm'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON
+`orangehrm_mysql`.* TO 'orangehrm'@'127.0.0.1' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON
+`orangehrm_mysql`.* TO 'orangehrm'@'::1' WITH GRANT OPTION;

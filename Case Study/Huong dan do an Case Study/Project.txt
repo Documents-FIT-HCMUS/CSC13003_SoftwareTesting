@@ -1,0 +1,14 @@
+Software Under Test: Orange HRM 4.5 or 5.1
+
+Link: https://github.com/orangehrm/orangehrm/releases
+
+All groups of students are asked to perform the following tasks:
+- Write test plan
+- Design test cases
+- Execute test cases
+- Report bugs
+- Use provided TestLink and BugMantis Tracking Tools to manage your test cases and your bugs.
+- Report the student tasks and self-evaluate the groups' result in the Project Score Sheet.
+- Besides that, you can report your finding bugs to OrangeHRM GitHub (tab Issues). If OrangeHRM confirms it is a bug, you will get bonus scores.
+
+Please follow the Project Score Sheet for more detail.
